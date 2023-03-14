@@ -33,10 +33,10 @@ internal sealed partial class MainViewModel : ObservableObject
         var rnd = Random.Shared;
         var newDevice = new Device($"Device {rnd.Next(100)}");
         
-        // Here ComboBox will update it's item list. 
+        // Here ComboBox will update its item list. 
         Devices.Add(newDevice);
         
-        // Here ComboBox will refresh it's selected item.
+        // Here ComboBox will refresh its selected item.
         SelectedDevice = newDevice;
     }
 }
